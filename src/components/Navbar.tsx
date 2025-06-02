@@ -15,7 +15,7 @@ export default function Navbar() {
             <li className='h-full flex items-center'><Link to="/categorias" className='px-3 text-gray-500 hover:text-gray-300'>Categoria</Link></li>
           </ul>
         </nav>
-        <Link to="#" className='flex items-center gap-3 bg-white px-3 py-2 rounded-full text-gray-900 hover:bg-gray-400 transition-colors'>
+        <Link to="https://github.com/wdwf/projeto_final_bloco_03" className='flex items-center gap-3 bg-white px-3 py-2 rounded-full text-gray-900 hover:bg-gray-400 transition-colors'>
           <p className='text-xs'>Link do projeto</p>
           <img src={github} width={24} />
         </Link>

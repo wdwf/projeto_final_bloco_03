@@ -4,7 +4,7 @@ export default function Home() {
       <p className="text-2xl font-bold text-center mt-10">
         Sem produtos cadastrados no momento.
       </p>
-      <p className=" pt-3 text-sm text-gray-500">Cheche a aba de categorias</p>
+      <p className=" pt-3 text-sm text-gray-500">Cheque a seção de categorias</p>
     </div>
   )
 }

@@ -5,21 +5,25 @@ import Home from "./pages/Home";
 import FormCategoria from "./components/FormCategoria";
 import NotFound from "./pages/NotFound";
 import ListaCategorias from "./components/ListaCategorias";
-import DeletarCategorias from "./components/DeletarCategorias";
+import DeletarCategoria from "./components/DeletarCategoria";
+import { ToastContainer } from "react-toastify";
+import ListaProdutos from "./components/ListaProdutos";
 
 function App() {
 
   return (
     <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <Router>
+        <ToastContainer />
         <Navbar />
         <div>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/cadastrar-categoria" element={<FormCategoria />} />
             <Route path="/editar-categoria/:id" element={<FormCategoria />} />
-            <Route path="/deletar-categoria/:id" element={<DeletarCategorias />} />
+            <Route path="/deletar-categoria/:id" element={<DeletarCategoria />} />
             <Route path="/categorias" element={<ListaCategorias />} />
+            <Route path="/produtos" element={<ListaProdutos />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </div>
